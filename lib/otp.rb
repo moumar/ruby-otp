@@ -2,7 +2,7 @@ require "digest/md5"
 require "openssl"
 
 class OTP
-  VERSION = "0.1"
+  VERSION = "0.2"
 
   WORDS = %w{A ABE ACE ACT AD ADA ADD AGO AID AIM AIR ALL ALP AM AMY AN ANA AND ANN ANT ANY APE APS
   APT ARC ARE ARK ARM ART AS ASH ASK AT ATE AUG AUK AVE AWE AWK AWL AWN AX AYE BAD BAG BAH BAM
@@ -163,7 +163,7 @@ class OTP
   def to_i
     (0...8).inject(0) do |sum, i|
       sum <<= 8
-      sum |= (@hash[i] & 0xff)
+      sum |= (@hash[i].ord & 0xff)
     end
   end
 

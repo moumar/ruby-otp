@@ -1,8 +1,8 @@
 = ruby-otp
 
-by Guillaume Pierronnet
 * http://ruby-otp.rubyforge.org
 * https://github.com/moumar/ruby-otp
+by Guillaume Pierronnet
 
 == DESCRIPTION:
 
