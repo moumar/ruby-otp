@@ -1,5 +1,9 @@
 = ruby-otp
 
+== Status: unmaintained
+
+🚨 This project is no longer actively maintained.
+
 * http://ruby-otp.rubyforge.org
 * https://github.com/moumar/ruby-otp
 by Guillaume Pierronnet
